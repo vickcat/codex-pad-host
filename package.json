@@ -1,0 +1,23 @@
+{
+  "name": "codex-peripheral-host-bridge",
+  "version": "0.7.0",
+  "description": "Codex 外设主机桥接服务 —— WebSocket 服务器 + UDP 局域网发现 + ASR + Codex CDP 深控（Phase 7）",
+  "type": "module",
+  "main": "src/server.mjs",
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node test/test_ws.mjs && node test/test_cli.mjs",
+    "test:ws": "node test/test_ws.mjs",
+    "test:cli": "node test/test_cli.mjs",
+    "test:e2e": "node test/test_phase5_e2e.mjs",
+    "test:e2e6": "node test/test_phase6_e2e.mjs",
+    "test:e2e7": "node test/test_phase7_e2e.mjs",
+    "mock": "node scripts/mock-client.mjs"
+  },
+  "dependencies": {
+    "ws": "^8.21.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
